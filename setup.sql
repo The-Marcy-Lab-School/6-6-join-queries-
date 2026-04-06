@@ -1,5 +1,10 @@
 \c social_db
 
+DROP TABLE IF EXISTS post_tags;
+DROP TABLE IF EXISTS tags;
+DROP TABLE IF EXISTS posts;
+DROP TABLE IF EXISTS users;
+
 CREATE TABLE users (
   user_id   SERIAL PRIMARY KEY,
   username  TEXT   NOT NULL UNIQUE,
